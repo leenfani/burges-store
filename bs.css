@@ -1,0 +1,208 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: poppins;
+}
+body{
+    background-color: #2A2438;
+}
+p{
+    /*color dilution*/ 
+    opacity: 0.5; 
+    /*or color:rgb(255,255,255,0.5);*/
+    color: white;
+}
+.container .menu{
+    width: 71.5%;
+}
+.container{
+    padding: 4%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0%;
+}
+.container .menu header h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+.container .menu .tags{
+    margin-top: 2.9%;
+}
+.container .menu .tags .tag{
+    height: 55px;
+    width: 200px;
+    background-color: #352f44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.container .menu .tags .icon img{
+    margin-top: 5px;
+    height: 45px;
+    width:40px;
+    margin-right: 20px;
+}
+.title{
+    font-size: 15px;
+    color: white;
+}
+.container .order{
+    width: 32%;
+    color: white;
+    padding-left: 45px;
+}
+/*burgers*/
+.container .menu .burgers{
+    height: 325px;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+/*scrollbar*/
+::-webkit-scrollbar{
+    width:10px ;
+}
+::-webkit-scrollbar-track{
+    background-color: #352f44;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #474057;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #221e2c;
+}
+.container .menu .burgers .burger{
+    height: 325px;
+    width: 250px;
+    background-color: #352f44;
+    border-radius: 12px;
+    margin: 15px;
+    margin-left: 0;
+}
+.container .menu .burgers .burger .image img{
+    width: 220px;
+    height: 190px;
+    overflow: hidden;
+    padding-top: 14px;
+    padding-left: 14px; 
+}
+.container .menu .burgers .burger .type h2{
+    font-size: 23px;
+    padding-left: 14px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 40px;
+    color: white;
+}
+.container .burgers .burger .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    
+}
+.container .burgers .burger .bottom .price{
+    color: rgb(243, 57, 57);
+    font-size: 25px;
+    font-weight: bold;
+}
+.container .burgers .burger .bottom .cart .fa-cart-plus{
+    height: 30px;
+    cursor: pointer;
+    color: white;
+}
+/*orderedburgers*/
+.container .order .orderedburgers{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 200px;
+    overflow-y: auto;
+    width: 450px;
+    overflow: auto;
+}
+.container .order .orderedburgers .burger{
+    height: 80px;
+    width: 400px;
+    background-color: #352f44;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    padding-left: 5%;
+    padding-top: 8px;
+}
+.container .order .orderedburgers .burger .icon img{
+    height: 65px;
+    width: 65px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.container .order .orderedburgers .burger .userorder {
+    margin-left: 5%; 
+    margin-right: 20%;
+}
+.container .order .orderedburgers .burger .userorder h2{
+    font-size: 15px;
+    width: 180px;
+    overflow: hidden;
+    color: white;
+}
+.container .order .orderedburgers .burger .delete .fa-circle-xmark{
+    font-size: 34px;
+    color: rgb(243, 57, 57);
+    cursor: pointer;
+    
+}
+.container .order .bill{
+    height: 274px;
+    width: 400px;
+    background-color: #352f44;
+    border-radius: 12px;
+}
+.container .order .bill .cash{
+    color:rgb(255,255,255,0.5);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+.container .order .bill .total{
+    border-top: white dashed;
+    padding-top: 5%;
+}
+.container .order .bill .subtotal{
+    padding-top: 5%;
+}
+.container .order .bill span{
+    color: white;
+}
+.container .order .bill .button{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.container .order .bill button{
+    width: 400px;
+    height: 80px;
+    border-radius: 12px;
+    background-color: rgb(243, 57, 57);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+}
+/*not sure*/
+.container .order .bill button:hover{
+    border:rgb(255,255,255,0.5) solid;
+}
